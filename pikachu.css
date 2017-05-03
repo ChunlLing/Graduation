@@ -26,11 +26,11 @@
 /* 头部：耳朵，眼睛，嘴巴，脸腮，鼻子 */
 .head {
 	width: 120px;
-	height: 116px;
-	border-top-left-radius: 45%;
-	border-top-right-radius: 45%;
-	border-bottom-left-radius: 38%;
-	border-bottom-right-radius: 38%;
+	height: 126px;
+	border-top-left-radius: 46%;
+	border-top-right-radius: 46%;
+	border-bottom-left-radius: 42%;
+	border-bottom-right-radius: 42%;
 	/* border-bottom: none; */
 }
 /* 头部耳朵 */
@@ -104,7 +104,7 @@
 /* 头部脸腮 */
 .head .cheek {}
 .head .cheek .cheek-l {
-	top: 56px;
+	top: 58px;
 	left: 10px;
 	width: 26px;
 	height: 26px;
@@ -113,7 +113,7 @@
 	background-color: #fe0000;
 }
 .head .cheek .cheek-r {
-	top: 56px;
+	top: 58px;
 	left: 80px;
 	width: 26px;
 	height: 26px;
@@ -123,7 +123,7 @@
 }
 /* 头部鼻子 */
 .head .nose {
-	top: 64px;
+	top: 68px;
 	left: 58px;
 	width: 4px;
 	height: 2px;
@@ -131,8 +131,8 @@
 }
 /* 头部嘴巴 */
 .head .mouth {
-	top: 76px;
-	left: 46px;
+	top: 82px;
+	left: 45px;
 	width: 28px;
 	height: 32px;
 	border-top-left-radius: 30%;
@@ -140,6 +140,7 @@
 	border-bottom-left-radius: 90%;
 	border-bottom-right-radius: 90%;
 	background-color: #6a1e20;
+	border: 2px solid #6a1e20;
 	overflow: hidden;
 }
 .head .mouth::after {
