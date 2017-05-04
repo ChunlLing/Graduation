@@ -46,10 +46,10 @@
 .head .ear {}
 .head .ear .ear-l {
 	top: -50px;
-	left: -40px;
-	transform: rotate(-45deg);
-	width: 40px;
-	height: 90px;
+	left: -36px;
+	transform: rotate(-48deg);
+	width: 32px;
+	height: 98px;
 	border-top-left-radius: 50%;
 	border-top-right-radius: 50%;
 	border-bottom-left-radius: 38%;
@@ -58,11 +58,11 @@
 	overflow: hidden;
 }
 .head .ear .ear-r {
-	top: -50px;
-	left: 112px;
-	transform: rotate(45deg);
-	width: 40px;
-	height: 90px;
+	top: -54px;
+	left: 122px;
+	transform: rotate(58deg);
+	width: 30px;
+	height: 98px;
 	border-top-left-radius: 50%;
 	border-top-right-radius: 50%;
 	border-bottom-left-radius: 38%;
