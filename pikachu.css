@@ -11,7 +11,8 @@
 .head .cheek .cheek-l, .head .cheek .cheek-r,
 .body .hand .hand-l, .body .hand .hand-r,
 .body .belly .belly-t, .body .belly .belly-m, .body .belly .belly-b,
-.body .tail .tail-1, .body .tail .tail-2, .body .tail .tail-3, .body .tail .tail-4
+.body .tail .tail-1, .body .tail .tail-2, .body .tail .tail-3, .body .tail .tail-4,
+.foot .foot-l, .foot .foot-r
 {
 	position: absolute;
 }
@@ -20,7 +21,8 @@
 .head .ear .ear-l, .head .ear .ear-r,
 .body .hand .hand-l, .body .hand .hand-r,
 .body .belly .belly-t, .body .belly .belly-b,
-.body .tail .tail-1, .body .tail .tail-2, .body .tail .tail-3, .body .tail .tail-4
+.body .tail .tail-1, .body .tail .tail-2, .body .tail .tail-3, .body .tail .tail-4,
+.foot .foot-l, .foot .foot-r
 {
 	background-color: #faf305;
 	border: 3px solid #222;
@@ -295,4 +297,46 @@
 }
 
 /* 脚 */
-.foot {}
+.foot {
+}
+.foot .foot-l {
+	top: 100px;
+	transform: rotate(-90deg);
+	width: 24px;
+	height: 60px;
+	border-top-left-radius: 45%;
+	border-top-right-radius: 45%;
+	border-bottom-left-radius: 38%;
+}
+.foot .foot-l::before {
+	position: relative;
+	top: 32px;
+	left: 14px;
+	content: "";
+	display: block;
+	width: 14px;
+	height: 38px;
+	border-bottom-left-radius: 68%;
+	background-color: #faf305;
+}
+.foot .foot-r {
+	top: 102px;
+	left: 90px;
+	transform: rotate(90deg);
+	width: 22px;
+	height: 58px;
+	border-top-left-radius: 45%;
+	border-top-right-radius: 45%;
+	border-bottom-right-radius: 38%;
+}
+.foot .foot-r::before {
+	position: relative;
+	top: 14px;
+	left: -10px;
+	content: "";
+	display: block;
+	width: 14px;
+	height: 48px;
+	border-top-right-radius: 68%;
+	background-color: #faf305;
+}
