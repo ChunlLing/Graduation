@@ -285,9 +285,28 @@
 	z-index: -1;
 }
 .body .tail {
-	top: 40px;
+	top: 46px;
 	left: -16px;
 	z-index: -2;
+	transform-origin: 100% 100%;
+	animation: shake 10s infinite alternate;
+}
+@keyframes shake {
+	0% {
+		transform: rotate(2deg);
+	}
+	20% {
+		transform: rotate(2.4deg);
+	}
+	40% {
+		transform: rotate(2.8deg);
+	}
+	60% {
+		transform: rotate(3.3deg);
+	}
+	80% {
+		transform: rotate(2.9deg);
+	}
 }
 .body .tail .tail-1 {
 	transform: rotate(58deg);
