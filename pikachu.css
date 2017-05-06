@@ -134,7 +134,7 @@
 }
 @keyframes gradient {
 	0% {
-		opacity: .7;
+		opacity: .6;
 	}
 	25% {
 		opacity: .8;
@@ -285,27 +285,41 @@
 	z-index: -1;
 }
 .body .tail {
-	top: 46px;
+	top: 66px;
 	left: -16px;
 	z-index: -2;
-	transform-origin: 100% 100%;
-	animation: shake 10s infinite alternate;
+	animation: shake 6s infinite alternate;
 }
 @keyframes shake {
 	0% {
 		transform: rotate(2deg);
 	}
-	20% {
+	10% {
 		transform: rotate(2.4deg);
 	}
+	20% {
+		transform: rotate(3.0deg);
+	}
+	30% {
+		transform: rotate(2.7deg);
+	}
 	40% {
-		transform: rotate(2.8deg);
+		transform: rotate(2.5deg);
+	}
+	50% {
+		transform: rotate(2.9deg);
 	}
 	60% {
-		transform: rotate(3.3deg);
+		transform: rotate(3.2deg);
+	}
+	70% {
+		transform: rotate(2.8deg);
 	}
 	80% {
-		transform: rotate(2.9deg);
+		transform: rotate(2.5deg);
+	}
+	90% {
+		transform: rotate(2.2deg);
 	}
 }
 .body .tail .tail-1 {
