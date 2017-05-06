@@ -45,9 +45,8 @@
 /* 头部耳朵 */
 .head .ear {}
 .head .ear .ear-l {
-	top: -50px;
-	left: -36px;
-	transform: rotate(-48deg);
+	top: -90px;
+	left: 2px;
 	width: 32px;
 	height: 98px;
 	border-top-left-radius: 50%;
@@ -56,11 +55,24 @@
 	border-bottom-right-radius: 38%;
 	border-bottom: none;
 	overflow: hidden;
+	transform: rotate(-48deg);
+	transform-origin: 94% 100%;
+	animation: earL 6s infinite;
+}
+@keyframes earL {
+	0% {
+		transform: rotate(-48deg);
+	}
+	33% {
+		transform: rotate(-40deg);
+	}
+	66% {
+		transform: rotate(-56deg);
+	}
 }
 .head .ear .ear-r {
-	top: -54px;
-	left: 122px;
-	transform: rotate(58deg);
+	top: -94px;
+	left: 84px;
 	width: 30px;
 	height: 98px;
 	border-top-left-radius: 50%;
@@ -69,6 +81,20 @@
 	border-bottom-right-radius: 38%;
 	border-bottom: none;
 	overflow: hidden;
+	transform: rotate(58deg);
+	transform-origin: 2% 100%;
+	animation: earR 8s infinite;
+}
+@keyframes earR {
+	0% {
+		transform: rotate(58deg);
+	}
+	33% {
+		transform: rotate(68deg);
+	}
+	66% {
+		transform: rotate(48deg);
+	}
 }
 .head .ear .ear-l::before, .head .ear .ear-r::before {
 	content: "";
