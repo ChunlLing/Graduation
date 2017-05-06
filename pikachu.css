@@ -259,6 +259,26 @@
 	border-bottom-left-radius: 28%;
 	border-bottom-right-radius: 26%;
 	border-bottom: none;
+	/* animation: handL 2s infinite; */
+}
+@keyframes handL {
+	0% {
+		border-top-left-radius: 46%;
+		border-top-right-radius: 44%;
+	}
+	25% {
+		border-top-left-radius: 40%;
+		border-top-right-radius: 38%;
+	}
+	50% {
+		border-top-left-radius: 48%;
+		border-top-right-radius: 46%;
+		transform: rotate(-62deg);
+	}
+	75% {
+		border-top-left-radius: 54%;
+		border-top-right-radius: 50%;
+	}
 }
 .body .hand .hand-r {
 	top: -70px;
@@ -271,6 +291,25 @@
 	border-bottom-left-radius: 38%;
 	border-bottom-right-radius: 24%;
 	border-bottom: none;
+	animation: handR 2s infinite;
+}
+@keyframes handR {
+	0% {
+		border-top-left-radius: 46%;
+		border-top-right-radius: 50%;
+	}
+	25% {
+		border-top-left-radius: 40%;
+		border-top-right-radius: 45%;
+	}
+	50% {
+		border-top-left-radius: 38%;
+		border-top-right-radius: 39%;
+	}
+	75% {
+		border-top-left-radius: 34%;
+		border-top-right-radius: 29%;
+	}
 }
 /* 肚子 */
 .body .belly {
