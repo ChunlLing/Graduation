@@ -423,6 +423,21 @@
 	border-top-left-radius: 45%;
 	border-top-right-radius: 45%;
 	border-bottom-left-radius: 38%;
+	animation: walkL 2s infinite alternate;
+}
+@keyframes walkL {
+	0% {
+		transform: rotate(-88deg);
+	}
+	25% {
+		transform: rotate(-86deg);
+	}
+	50% {
+		transform: rotate(-89deg);
+	}
+	75% {
+		transform: rotate(-92deg);
+	}
 }
 .foot .foot-l::before {
 	position: relative;
@@ -444,6 +459,21 @@
 	border-top-left-radius: 45%;
 	border-top-right-radius: 45%;
 	border-bottom-right-radius: 38%;
+	animation: walkR 2s infinite alternate;
+}
+@keyframes walkR {
+	0% {
+		transform: rotate(88deg);
+	}
+	25% {
+		transform: rotate(86deg);
+	}
+	50% {
+		transform: rotate(89deg);
+	}
+	75% {
+		transform: rotate(92deg);
+	}
 }
 .foot .foot-r::before {
 	position: relative;
