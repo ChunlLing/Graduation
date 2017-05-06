@@ -193,7 +193,7 @@
 	background-color: #6a1e20;
 	border: 2px solid #6a1e20;
 	overflow: hidden;
-	animation: speak 1s infinite;
+	animation: speak 2s infinite;
 }
 .head .mouth::after {
 	content: "";
