@@ -1,12 +1,12 @@
 @charset "UTF-8";
 
-.pikachu, .head, .body, .foot,
+.head, .body, .foot,
 .head .ear, .head .eye, .head .cheek, .head .nose, .head .mouth, .head .mouth-close,
 .body .belly, .body .tail
 {
 	position: relative;
 }
-.head .ear .ear-l, .head .ear .ear-r,
+.pikachu-obj, .pikachu, .head .ear .ear-l, .head .ear .ear-r,
 .head .eye .eye-l, .head .eye .eye-r,
 .head .cheek .cheek-l, .head .cheek .cheek-r,
 .body .hand .hand-l, .body .hand .hand-r,
@@ -38,13 +38,13 @@
 		transform: translate(0px,0px);
 	}
 	20% {
-		transform: translate(0px,3px);
+		transform: translate(0px,10px);
 	}
 	40% {
 		transform: translate(0px,-1px);
 	}
 	60% {
-		transform: translate(0px,-3px);
+		transform: translate(0px,-11px);
 	}
 	80% {
 		transform: translate(0px,0px);

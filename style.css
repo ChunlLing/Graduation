@@ -5,3 +5,13 @@ body {
 	height: 100vh;
 	background-color: #ccc;
 }
+canvas {
+	width: 100vw;
+	height: 100vh;
+}
+.pikachu-obj {
+	top: 40%;
+	left: 25%;
+	transform: scale(.4);
+	z-index: 99;
+}
