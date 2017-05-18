@@ -3,15 +3,73 @@ body {
 	margin: 0px;
 	width: 100vw;
 	height: 100vh;
-	background-color: #ccc;
+	// background-color: #ccc;
 }
-canvas {
-	width: 100vw;
-	height: 100vh;
+#content {
+	position: absolute;
+	top: 20%;
+	left: 15%;
+	line-height: 1.8em;
+	font-size: 14px;
+	color: #222;
 }
-.pikachu-obj {
-	top: 40%;
-	left: 25%;
-	transform: scale(.4);
+#img {
+	position: absolute;
+	top: 50%;
+	left: 35%;
+	// width: 400px;
+	height: 200px;
+	// overflow: hidden;
+	border-radius: 10px;
+}
+#img img {
+	// display: block;
+	float: left;
+	height: 200px;
+	transition: opacity 2s ease-in-out 2s;
+}
+#pikachu-obj {
+	position: absolute;
+	top: 20%;
+	left: 75%;
+	transform: scale(.25);
 	z-index: 99;
+	transition: transform 10s;
+	/* animation: walk 10s infinite alternate; */
 }
+#cube-obj {
+	position: absolute;
+	top: 70%;
+	left: 45%;
+}
+
+@media screen and (min-width: 500px) {
+	#content {
+		position: absolute;
+		top: 20%;
+		left: 35%;
+		line-height: 1.8em;
+		font-size: 18px;
+		color: #222;
+	}
+	#pikachu-obj {
+		position: absolute;
+		top: 40%;
+		left: 15%;
+		transform: scale(.25);
+		z-index: 99;
+		animation: walk 60s;
+	}
+	#cube-obj {
+		position: absolute;
+	}
+}
+
+@keyframes walk {
+	0% {
+		transform: scale(.15);
+	}
+	100% {
+		transform: scale(.35);
+	}
+} 

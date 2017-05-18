@@ -1,0 +1,54 @@
+.cube {
+	position: absolute;
+	top: 20%;
+	left: 35%;
+	perspective: 200px;
+	transform-style: preserver-3d;
+
+	transform: rotateY(180deg);
+}
+
+.box {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -50px;
+	margin-left: -50px;
+
+	width: 100px;
+	height: 100px;
+
+	line-height: 100px;
+	text-align: center;
+	font-size: 30px;
+}
+
+.box1 {
+	transform: translateZ(50px);
+	background-color: rgba(128, 0, 0, .4);
+}
+
+.box2 {
+	transform: translateZ(-50px);
+	background-color: rgba(0, 128, 0, .4);
+}
+
+.box3 {
+	transform: translateY(50px) rotateX(90deg);
+	background-color: rgba(0, 0, 128, .4);
+}
+
+.box4 {
+	transform: translateY(-50px) rotateX(90deg);
+	background-color: rgba(0, 0, 0, .4);
+}
+
+.box5 {
+	transform: translateX(50px) rotateY(90deg);
+	background-color: rgba(128, 128, 128, .4);
+}
+
+.box6 {
+	transform: translateX(-50px) rotateY(90deg);
+	background-color: rgba(255, 255, 255, .4);
+}
