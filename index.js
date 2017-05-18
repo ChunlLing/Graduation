@@ -16,7 +16,7 @@ window.onload = function () {
 	// content.innerHTML = textArr[2].replace(/\|/g, '<br />');
 
 	var pageTime = 2000;
-	var wordTime = 100;
+	var wordTime = 200;
 
 	var pagePos = 0;
 	var wordPos = 0;
@@ -53,7 +53,7 @@ window.onload = function () {
 		wordTimer = setInterval(show, wordTime);
 	}
 
-	// show();
+	show();
 
 	// setInterval(function () {
 	// 	img.src = 'images/img' + index + '.jpg';
