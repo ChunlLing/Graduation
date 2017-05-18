@@ -2,10 +2,12 @@
 	position: absolute;
 	top: 20%;
 	left: 35%;
-	perspective: 200px;
-	transform-style: preserver-3d;
+	perspective: 0px;
+	/* transform-origin: 50% 50% 200px; */
+	transform-style: preserve-3d;
+	/* backface-visibility: hidden; */
 
-	transform: rotateY(180deg);
+	transform: rotateY(45deg) rotateZ(45deg);
 }
 
 .box {
@@ -20,12 +22,12 @@
 
 	line-height: 100px;
 	text-align: center;
-	font-size: 30px;
+	font-size: 60px;
 }
 
 .box1 {
 	transform: translateZ(50px);
-	background-color: rgba(128, 0, 0, .4);
+	background-color: rgba(128, 128, 128, .4);
 }
 
 .box2 {
@@ -50,5 +52,5 @@
 
 .box6 {
 	transform: translateX(-50px) rotateY(90deg);
-	background-color: rgba(255, 255, 255, .4);
+	background-color: rgba(255, 0, 255, .4);
 }

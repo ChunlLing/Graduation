@@ -5,6 +5,9 @@ body {
 	height: 100vh;
 	// background-color: #ccc;
 }
+.img {
+	width: 100px;
+}
 #content {
 	position: absolute;
 	top: 20%;
@@ -12,21 +15,6 @@ body {
 	line-height: 1.8em;
 	font-size: 14px;
 	color: #222;
-}
-#img {
-	position: absolute;
-	top: 50%;
-	left: 35%;
-	// width: 400px;
-	height: 200px;
-	// overflow: hidden;
-	border-radius: 10px;
-}
-#img img {
-	// display: block;
-	float: left;
-	height: 200px;
-	transition: opacity 2s ease-in-out 2s;
 }
 #pikachu-obj {
 	position: absolute;
