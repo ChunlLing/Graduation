@@ -24,9 +24,9 @@ body {
 	position: absolute;
 	top: 20%;
 	left: 75%;
-	transform: scale(.25);
+	transform: scale(.35);
 	z-index: 99;
-	animation: walk 100s infinite alternate;
+	animation: walk 30s;
 }
 #cube-obj {
 	position: absolute;
@@ -36,9 +36,9 @@ body {
 }
 
 @media screen and (min-width: 685px) {
-	body {
-		background-position: center center;
-	}
+/* 	body {
+	background-position: center center;
+} */
 	#content {
 		position: absolute;
 		top: 20%;
@@ -50,15 +50,21 @@ body {
 		position: absolute;
 		top: 20%;
 		left: 15%;
-		transform: scale(.25);
+		transform: scale(.35);
 		z-index: 99;
-		animation: walk 60s;
+		animation: walk 30s;
 	}
 	#cube-obj {
 		position: absolute;
 		top: 75%;
 		left: 25%;
 		transform: scale(1);
+	}
+}
+
+@media screen and (min-width: 769px) {
+	body {
+		background-position: center center;
 	}
 }
 

@@ -4,19 +4,18 @@ window.onload = function () {
 	var index = 1;
 
 	var textArr = new Array();
-	textArr[0] = '2013.9.5|First Day|新奇？自由？未知世界？|探险未来！|（好俗套的开场白...((´-_-)-_-)-_-)';
-	textArr[1] = '最初印象|应该是军训|||的太阳  (－＂－怒)|和大学四年流得最多的汗  (▼ヘ▼#)|以及帅气可爱的教官  (▰˘◡˘▰)';
-	textArr[2] = '爱好不多|偶尔打打游戏|挂过科，也拿过奖学金|总的来说 平平无奇吧';
-	textArr[3] = '此处省略1W+字的大学生活.......';
-	textArr[4] = '套用一句老掉牙的话|总以为毕业遥遥无期，|转眼却各奔东西。';
-	textArr[5] = '不矫情啦|作此demo留念|2017.5.20|我 毕业了 : )';
-	textArr[6] = 'Hello World!||Bye~'
-	textArr[7] = 'Ps:奇点是最帅的！！！'
+	textArr[0] = 'Hello World!';
+	textArr[1] = '2013.9.5|First Day';
+	textArr[2] = '此处省略1W+字的大学生活.......';
+	textArr[3] = '套用一句老掉牙的话|总以为毕业遥遥无期，|转眼却各奔东西。';
+	textArr[4] = '不矫情啦|作此demo留念|2017.5.20|我 毕业了 : )';
+	textArr[5] = 'Bye~'
+	textArr[6] = 'Ps: 奇点是最帅的 ๑乛◡乛๑'
 
-	// content.innerHTML = textArr[2].replace(/\|/g, '<br />');
+	// content.innerHTML = textArr[7].replace(/\|/g, '<br />');
 
-	var pageTime = 2000;
-	var wordTime = 200;
+	var pageTime = 1000;
+	var wordTime = 100;
 
 	var pagePos = 0;
 	var wordPos = 0;
@@ -43,8 +42,14 @@ window.onload = function () {
 			wordPos = 0;
 			return;
 		}
-		if (pagePos == 7) {
+		if (pagePos == 6) {
 			wordTime = 0;
+			if (wordPos == str.length-1) {
+				console.log('以为我要......？');
+				console.log('并没有:)');
+				console.log('如人饮水 冷暖自知');
+				// console.log(new Date());
+			}
 		}
 
 		clearInterval(wordTimer);
@@ -52,17 +57,12 @@ window.onload = function () {
 		wordPos++;
 		wordTimer = setInterval(show, wordTime);
 	}
+	// console.log(new Date());
 
-	// show();
+	show();
 
-	// setInterval(function () {
-	// 	img.src = 'images/img' + index + '.jpg';
-	// 	index++;
-	// 	if (index == 3) {
-	// 		index = 1;
-	// 	}
-	// }, 5000)
- 
-
+	/*
+		用时：18s
+	*/
 
 };
