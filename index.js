@@ -53,7 +53,7 @@ window.onload = function () {
 		wordTimer = setInterval(show, wordTime);
 	}
 
-	show();
+	// show();
 
 	// setInterval(function () {
 	// 	img.src = 'images/img' + index + '.jpg';
