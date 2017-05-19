@@ -119,7 +119,7 @@
 	display: block;
 	width: 100%;
 	height: 30px;
-	background-color: #222;
+	background-color: rgb(65, 35, 45);
 }
 /* 头部眼睛 */
 .head .eye {}

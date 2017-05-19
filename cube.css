@@ -9,6 +9,7 @@
 
 	/* transform: rotateY(45deg) rotateZ(45deg); */
 	animation: album 50s infinite;
+
 }
 
 @keyframes album {
@@ -60,7 +61,10 @@
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: 200px auto;
-	background-color: #000;
+	background-color: rgba(0,0,0,.4);
+	border: 1px solid #9595ce;
+	border-radius: 10px;
+	box-shadow: 0px 0px 0px 3px rgba(55,148,239,.71);
 }
 
 .box1 {
